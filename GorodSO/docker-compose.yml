@@ -1,0 +1,11 @@
+﻿services:
+  gorodso:
+    image: gorodso
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: 
+      - Config__AccessToken=
+      - Config__Confirmation=
+    ports:
+      - 8080:8080
